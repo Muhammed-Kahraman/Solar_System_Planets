@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gezegenler/gezegen.dart';
 import 'package:gezegenler/information/String.dart';
 
-class Gezegen_liste extends StatelessWidget{
+class GezegenListe extends StatelessWidget{
+  final Color customcolor = Color(0xFF747474);
   static List<Gezegen> tumGezegenler;
   @override
   Widget build(BuildContext context) {
@@ -10,10 +11,13 @@ class Gezegen_liste extends StatelessWidget{
     tumGezegenler = veriKaynaginiHazirla();
     return Scaffold(
       appBar: AppBar(
-        title: Text("Gezegenler"),
-        backgroundColor: Colors.pinkAccent,
+        title: Center(
+            child: Text(
+              "Planets",
+            )),
+        backgroundColor: Colors.red.shade700,
       ),
-      body: ListeyiHazirla(),
+      body: Container(child: listeyihazirla(),color: Colors.white,),
     );
   }
   List<Gezegen> veriKaynaginiHazirla() {
@@ -31,21 +35,8 @@ class Gezegen_liste extends StatelessWidget{
     }
     return gezegenler;
   }
-  // List<Gezegen> veriKaynaginiHazirla() {
-  //   List<Gezegen> gezegenler = [];
-  //   for(int i = 0; i <= 7;i++){
-  //     String resim = Strings.GEZEGEN_ADLARI[i].toLowerCase() + ".jpg";
-  //     Gezegen eklenecekListe = Gezegen(
-  //         Strings.GEZEGEN_ADLARI[i],
-  //         Strings.GEZEGENLER_GENEL_OZELLIKLERI[i],
-  //         resim
-  //     );
-  //     gezegenler.add(eklenecekListe);
-  //     print(eklenecekListe.gezegenAdi);
-  //   }
-  //   return gezegenler;
-  // }
-  Widget ListeyiHazirla() {
+
+  static Widget listeyihazirla() {
     return ListView.builder(itemBuilder:
         (BuildContext context, int index){
       return teksatirGezegenler(context,index);
@@ -54,22 +45,23 @@ class Gezegen_liste extends StatelessWidget{
     );
   }
 
-  teksatirGezegenler(BuildContext context, int index) {
+  static teksatirGezegenler(BuildContext context, int index) {
     Gezegen oankigezegen = tumGezegenler[index];
     return Card(
-      elevation: 5,
+      color: Colors.white,
+      elevation: 20,
       child: ListTile(
         onTap: () => Navigator.pushNamed(context, '/gezegenDetay/$index'),
           title: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text(oankigezegen.gezegenAdi),
+            child: Text(oankigezegen.gezegenAdi,style: TextStyle(color: Colors.black),),
           ),
         leading: Image.asset("images/" + oankigezegen.kucukResim,
         width: 64, height: 64,
         ),
         subtitle: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Text("Detaylı Bilgi için Tıklayın."),
+          child: Text("Click For Detailed Information.",style: TextStyle(color: Colors.black),),
         ),
         trailing: Icon(Icons.arrow_forward_ios,color: Colors.pink,),
       ),

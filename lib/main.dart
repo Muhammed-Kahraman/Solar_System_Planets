@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:gezegenler/gezegen_footer.dart';
 import 'package:gezegenler/gezegen_detay.dart';
 import 'package:gezegenler/gezegen_liste.dart';
+
+import 'gezegen_anasayfa.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,16 +17,17 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       color: Colors.pinkAccent,
       routes: {
-        "/" : (context) => Gezegen_liste(),
-        "/gezegenListesi" : (context) => Gezegen_liste(),
+        "/" : (context) => GezegenFooter(),
+        "/gezegenListesi" : (context) => GezegenListe(),
       },
       onGenerateRoute: (RouteSettings settings){
         List<String> pathElemanlari = settings.name.split("/"); // / gezegenDetay /  1
         if(pathElemanlari[1] == 'gezegenDetay'){
-          return MaterialPageRoute(builder: (context) => Gezegen_detay(int.parse(pathElemanlari[2])));
+          return MaterialPageRoute(builder: (context) => GezegenDetay(int.parse(pathElemanlari[2])));
         }
         else{
-          return null;
+
+          return MaterialPageRoute(builder: (context) => GezegenAnasayfa());
         }
       },
       title: "Gezegen Rehberi",
