@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gezegenler/gezegen_anasayfa.dart';
 import 'package:gezegenler/gezegen_liste.dart';
 
-class GezegenFooter extends StatefulWidget {
+class GezegenFooter extends StatefulWidget{
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
 
@@ -24,8 +24,8 @@ class _GezegenFooterState extends State<GezegenFooter> {
       body: pageList[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
-          BottomNavigationBarItem(icon: Icon(Icons.add), label: "About us"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.add), label: "Planets"),
         ],
         currentIndex: selectedIndex,
         selectedItemColor: Colors.red.shade700,

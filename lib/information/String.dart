@@ -10,7 +10,8 @@ class Strings{
     "JUPİTER",
     "SATURN",
     "URANUS",
-    "NEPTUN"
+    "NEPTUN",
+    "PLUTON",
   ];
 
   static const List<String> GEZEGENLER_GENEL_OZELLIKLERI = [
@@ -93,6 +94,18 @@ class Strings{
     "\tNeptün’ün atmosferi oldukça aktiftir. Saniyede 1340 kilometrelik bir hıza ulaşan fırtınalar vardır.\n\n"
     "\tOrtalama sıcaklığı -214 derecedir.\n\n"
     "\tBugüne kadar keşfedilmiş 14 uydusu bulunmaktadır.\n\n",
+
+
+
+    "\tGenel Özellikler\n\n"
+    "\t1930 yılında keşfedilen ve Güneş Sistemi'nin en büyük 10. gökcismi olan Plüton, gezegen olma durumu tartışılan gökcisimleri arasındadır.\n\n"
+    "\t 2006 yılına kadar 9.gezegen olarak bilinen ve anılan Plüton,\n\n"
+    "\tsonraki dönemde Güneş Sistemi dışında keşfedilen Chrion ve Eris ile birlikte anılmaya başlamış ve cüce gezegen sınıfına sokulmuştur.\n\n"
+    "\tPlüton ismi ilk olarak keşfedildiği dönemde Oxford öğrencisi olan ve 2009 yılında hayata veda eden Venetia Burney tarafından önerildi. \n\n"
+    "\t Vetenia bu önerisini Plüton'un soğuk ve karanlık olma olasılığını yüksek gördüğü için mitolojide yer altı dünyasının tanrısı olan Plüton'dan esinlenerek bulduğunu söyledi.\n\n"
+    "\tPlüton'un yörünge hızı 4.888 km/sn'dir. Yüzey sıcaklığı ise -238c'dir. Plüton'un ince atmosferi dahi zaman zaman buz tutmaktadır. \n\n"
+    "\tPlüton 5 doğal uyduya sahiptir. Bunlar; Şaron, P5, P4, Niks ve Hidra'dır\n\n"
+    "\tBazı gökbilimciler bugün halen Plüton'un gezegen olduğunu öne sürmektedir.\n\n",
   ];
 
 

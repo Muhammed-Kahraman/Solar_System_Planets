@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
       title: "Gezegen Rehberi",
       theme: ThemeData(
         primarySwatch: Colors.pink,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
     );
   }

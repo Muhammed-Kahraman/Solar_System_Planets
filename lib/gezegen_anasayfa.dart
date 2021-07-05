@@ -15,12 +15,12 @@ class GezegenAnasayfa extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            height: 606,
             alignment: Alignment.center, // This is needed
             child: Image.asset(
               "images/homepageback.jpg",
               fit: BoxFit.cover,
               width: 395,
+              height: 606,
             ),
           ),
         ],

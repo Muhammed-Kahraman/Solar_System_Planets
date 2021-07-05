@@ -22,7 +22,7 @@ class GezegenListe extends StatelessWidget{
   }
   List<Gezegen> veriKaynaginiHazirla() {
     List<Gezegen> gezegenler = [];
-    for (int i = 0; i <= 7; i++) {
+    for (int i = 0; i <= Strings.GEZEGEN_ADLARI.length - 1; i++) {
       String resim = Strings.GEZEGEN_ADLARI[i].toLowerCase() + ".jpg";
       String kucukResim = Strings.GEZEGEN_ADLARI[i].toLowerCase() + "kucuk" + ".jpg";
       Gezegen eklenecekListe = Gezegen(
