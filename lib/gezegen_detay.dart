@@ -25,9 +25,9 @@ class _GezegenDetayState extends State<GezegenDetay> {
             expandedHeight: 250,
             pinned: true,
             primary: true,
-            backgroundColor: Colors.black,
+            backgroundColor: customcolor,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text(secilenGezegen.gezegenAdi + " Gezegen'nin Özellikleri",style: TextStyle(fontSize: 14,color: customcolor),),
+              title: Text(secilenGezegen.gezegenAdi + " Gezegen'nin Özellikleri",style: TextStyle(fontSize: 12,color: Colors.black),),
               background: Image.asset(
                 "images/" +  secilenGezegen.gezegenResim,
                 fit: BoxFit.cover,
@@ -53,3 +53,5 @@ class _GezegenDetayState extends State<GezegenDetay> {
     );
   }
 }
+
+//flutter build apk --release
