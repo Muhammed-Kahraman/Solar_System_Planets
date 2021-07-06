@@ -12,19 +12,15 @@ class GezegenAnasayfa extends StatelessWidget {
         )),
         backgroundColor: Colors.red.shade700,
       ),
-      body: Column(
-        children: [
-          Container(
-            alignment: Alignment.center, // This is needed
-            child: Image.asset(
-              "images/homepageback.jpg",
-              fit: BoxFit.cover,
-              width: 395,
-              height: 606,
-            ),
-          ),
-        ],
-      ),
+      body: Container(
+        alignment: Alignment.center, // This is needed
+        decoration: new BoxDecoration(
+            color: Colors.red,
+            image: new DecorationImage(
+                fit: BoxFit.cover,
+                image: new AssetImage(
+                    'images/homepageback.jpg'))),
+        ),
     );
   }
 }

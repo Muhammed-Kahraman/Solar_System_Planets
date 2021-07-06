@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:gezegenler/gezegen.dart';
-import 'package:gezegenler/gezegen_liste.dart';
+import 'package:planets/gezegen.dart';
+import 'package:planets/gezegen_liste.dart';
 
 class GezegenDetay extends StatefulWidget {
   final int gelenIndex;
@@ -27,7 +27,7 @@ class _GezegenDetayState extends State<GezegenDetay> {
             primary: true,
             backgroundColor: Colors.black,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text(secilenGezegen.gezegenAdi + " Gezegen'nin Özellikleri",style: TextStyle(fontSize: 16,color: customcolor),),
+              title: Text(secilenGezegen.gezegenAdi + " Gezegen'nin Özellikleri",style: TextStyle(fontSize: 14,color: customcolor),),
               background: Image.asset(
                 "images/" +  secilenGezegen.gezegenResim,
                 fit: BoxFit.cover,

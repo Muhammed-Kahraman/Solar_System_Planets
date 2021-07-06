@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gezegenler/gezegen.dart';
-import 'package:gezegenler/information/String.dart';
-
+import 'package:planets/gezegen.dart';
+import 'package:planets/information/String.dart';
 class GezegenListe extends StatelessWidget{
   final Color customcolor = Color(0xFF747474);
   static List<Gezegen> tumGezegenler;

@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gezegenler">
    <application
-        android:label="gezegenler"
+        android:label="Planets"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

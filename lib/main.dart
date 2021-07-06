@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gezegenler/gezegen_footer.dart';
-import 'package:gezegenler/gezegen_detay.dart';
-import 'package:gezegenler/gezegen_liste.dart';
+import 'package:planets/gezegen_footer.dart';
+import 'package:planets/gezegen_detay.dart';
+import 'package:planets/gezegen_liste.dart';
 
 import 'gezegen_anasayfa.dart';
 
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      color: Colors.pinkAccent,
+      color: Colors.red.shade700,
       routes: {
         "/" : (context) => GezegenFooter(),
         "/gezegenListesi" : (context) => GezegenListe(),

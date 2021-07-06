@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gezegenler/gezegen_anasayfa.dart';
-import 'package:gezegenler/gezegen_liste.dart';
+import 'package:planets/gezegen_anasayfa.dart';
+import 'package:planets/gezegen_liste.dart';
 
 class GezegenFooter extends StatefulWidget{
   static const TextStyle optionStyle =
